@@ -45,6 +45,7 @@ function sync_source() {
   
    git fetch upstream
    git checkout master
+   git commit -m 'update'
    git merge upstream/master
    git push # origin
    git checkout $current_branch
